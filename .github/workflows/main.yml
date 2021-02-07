@@ -25,7 +25,7 @@ jobs:
         
       # Runs a single command using the runners shell
       - name: Install sass
-        run: npm install -g sass
+        run: npm install sass
         
       # Runs a single command using the runners shell
       - name: Run sass
