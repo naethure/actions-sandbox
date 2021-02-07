@@ -25,9 +25,9 @@ jobs:
     - name: Compile SCSS
       run: ./node_modules/.bin/sass _scss:css
 
-    #Compile TS from _ts to js based on ts/tsconfig.json
+    #Compile TS from _ts to js based on tsconfig.json
     - name: Compile TS
-      run: tsc -p _ts/tsconfig.json
+      run: tsc
 
     #Populate the Manifest File for the Versioned release (project url, manifest url, download url, version)
     - name: Populate Manifest File - Versioned
