@@ -29,5 +29,5 @@ jobs:
         
       # Runs a single command using the runners shell
       - name: Run sass
-        run: npm sass
+        run: ./node_modules/.bin/sass
         
