@@ -55,7 +55,8 @@ jobs:
         prerelease: false
         token: ${{ secrets.GITHUB_TOKEN }}
         artifacts: 'module.json, module.zip'
-        tag: latest
+        tag: ${{ steps.get-version.outputs.version }}
+        commit: 'main'
 
     #Populate the Manifest File for the Latest release (project url, manifest url, download url, version)
     - name: Populate Manifest File - Latest
@@ -84,3 +85,4 @@ jobs:
         token: ${{ secrets.GITHUB_TOKEN }}
         artifacts: 'module.json, module.zip'
         tag: latest
+        commit: 'main'
