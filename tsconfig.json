@@ -7,7 +7,7 @@
 		"esModuleInterop": true,
 		"noFallthroughCasesInSwitch": true,
 		"noImplicitReturns": true,
-		"noPropertyAccessFromIndexSignature": true,
+		#"noPropertyAccessFromIndexSignature": true,#Reactivate after TS 4.2 is released
 		"noUncheckedIndexedAccess": true,
 		"noUnusedLocals": true,
 		"noUnusedParameters": true,
